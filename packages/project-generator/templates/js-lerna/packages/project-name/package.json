@@ -1,0 +1,21 @@
+{
+	"name": "name",
+	"version": "0.0.1",
+	"description": "",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Alexander Ruliov <alexander.ruliov@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"hypershape-logging": "^0.0.1",
+		"hypershape-util": "^0.0.1",
+		"asyncm": "^1.0.10",
+		"asyncmc": "^0.0.5",
+		"dotenv": "^8.2.0"
+	},
+	"devDependencies": {
+		"mocha": "7.1.2"
+	}
+}
