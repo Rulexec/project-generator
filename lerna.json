@@ -1,0 +1,7 @@
+{
+	"packages": ["packages/*", "dev-packages/*"],
+	"version": "independent",
+	"bootstrap": {
+		"npmClientArgs": ["--no-package-lock"]
+	}
+}
