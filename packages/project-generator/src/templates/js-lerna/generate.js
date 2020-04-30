@@ -23,13 +23,17 @@ function generate(options) {
 		}, path);
 	});
 
-	fs.copyFileSync(
-		_path.join(
-			TEMPLATE_PATH,
-			'packages/project-name/src/code-relative-path.js',
-		),
-		_path.join(path, 'packages', projectName, 'src/code-relative-path.js'),
-	);
+	[
+		'src/code-relative-path.js',
+		'src/config.js',
+		'src/context.js',
+		'src/main.js',
+	].forEach((sourcePath) => {
+		fs.copyFileSync(
+			_path.join(TEMPLATE_PATH, 'packages/project-name', sourcePath),
+			_path.join(path, 'packages', projectName, sourcePath),
+		);
+	});
 
 	let filesToCopy = [
 		'dev-packages/.gitignore',
